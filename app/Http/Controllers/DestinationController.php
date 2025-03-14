@@ -25,7 +25,7 @@ class DestinationController extends Controller
     {
         $user = Auth::user();
         $itinerary = Itineraries::where('id', $itineraries_id)->where('user_id', $user->id)->first();
-    
+
         if (!$itinerary) {
             return response()->json(['message' => 'Itinerary not found or not owned by user.'], 404);
         }
