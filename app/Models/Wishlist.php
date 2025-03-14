@@ -23,4 +23,5 @@ class Wishlist extends Model
     {
         return $this->belongsTo(Itineraries::class);
     }
+    
 }
