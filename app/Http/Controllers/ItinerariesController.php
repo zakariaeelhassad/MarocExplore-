@@ -169,8 +169,6 @@ class ItinerariesController extends Controller
         return response()->json($itineraries, 200);
     }
 
-
-
     public function search(Request $request)
     {
         $query = Itineraries::query();
